@@ -43,7 +43,7 @@ footer {
     background-color: #333;
     color: #fff;
 }
-.justified-text {
+.justified-text p {
             text-align: justify;
 }
 
