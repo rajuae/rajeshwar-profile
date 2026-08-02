@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajeshwar Reddy Kothakapu | Senior Technical Project Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #2563eb;
+            --accent: #0284c7;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #002244 0%, #003366 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #93c5fd;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.95rem;
+            margin-top: 15px;
+        }
+
+        .contact-info a {
+            color: #e0f2fe;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: #38bdf8;
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .summary-text {
+            font-size: 1.05rem;
+            color: #334155;
+            line-height: 1.7;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .skill-card h3 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .skill-card ul {
+            list-style-type: none;
+        }
+
+        .skill-card li {
+            font-size: 0.95rem;
+            color: #475569;
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .skill-card li::before {
+            content: "•";
+            color: var(--secondary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid #cbd5e1;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .job-meta {
+            font-size: 0.95rem;
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .job-bullets {
+            padding-left: 20px;
+        }
+
+        .job-bullets li {
+            font-size: 0.95rem;
+            color: #334155;
+            margin-bottom: 8px;
+        }
+
+        .edu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .edu-card {
+            background: #f8fafc;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .edu-card h3 {
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .edu-card p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--gray);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            section { padding: 20px; }
+            .contact-info { flex-direction: column; align-items: center; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>RAJESHWAR REDDY KOTHAKAPU</h1>
+            <div class="subtitle">Senior Technical Project Manager — Cloud Infrastructure & Enterprise Applications</div>
+            <div class="contact-info">
+                <span>📍 Hyderabad, Telangana, India</span>
+                <span>📧 <a href="mailto:raj.uae@outlook.com">raj.uae@outlook.com</a></span>
+                <span>📞 +91 76710 99873</span>
+                <span>🔗 <a href="https://linkedin.com/in/rajuae" target="_blank">linkedin.com/in/rajuae</a></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Executive Summary</h2>
+            <p class="summary-text">
+                Accomplished Senior Technical Project Manager & Application Owner with 10+ years of enterprise IT experience leading cloud transformation, application infrastructure management, and digital solution delivery across Banking (ICICI Bank), FinTech (SBIepay), and e-Governance (CGG). Currently managing mission-critical banking platforms at ICICI Bank, driving Lift & Shift migrations to Azure Cloud IaaS, IIS web application hosting, File Server Clusters, and Azure Blob Storage with zero downtime. Expert in IT Governance (ISG), Risk Management, Cost Optimization, BCP/DR planning, SLA compliance, and Agile delivery using Jira and ServiceNow. Certified Scrum Master (CSM) and MCSA with strong cross-functional team leadership experience.
+            </p>
+        </section>
+
+        <section>
+            <h2>Core Competencies & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Project & IT Governance</h3>
+                    <ul>
+                        <li>End-to-End PM Lifecycle & SDLC</li>
+                        <li>IT & Information Security Governance (ISG)</li>
+                        <li>Risk Management & Mitigation</li>
+                        <li>Azure Cost Optimization</li>
+                        <li>SLA, Vendor & Audit Compliance</li>
+                        <li>BCP & Disaster Recovery (DR)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Cloud & Infrastructure</h3>
+                    <ul>
+                        <li>Microsoft Azure Cloud IaaS</li>
+                        <li>Lift & Shift Cloud Migrations</li>
+                        <li>Azure Blob & Storage Accounts</li>
+                        <li>Windows Server (2012/2016/2022)</li>
+                        <li>IIS Web Application Hosting</li>
+                        <li>File Server Clusters & Backup/Restore</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Application Operations</h3>
+                    <ul>
+                        <li>Application Lifecycle Management</li>
+                        <li>24/7 L1/L2/L3 Production Support</li>
+                        <li>Root Cause Analysis (RCA)</li>
+                        <li>ServiceNow & Jira Workflows</li>
+                        <li>VUsmart Application Monitoring</li>
+                        <li>Release & Change Management</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Data, Analytics & BA</h3>
+                    <ul>
+                        <li>SSMS (SQL Server Management Studio)</li>
+                        <li>SSRS & Power BI Dashboards</li>
+                        <li>SQL Log Analysis & Query Tuning</li>
+                        <li>BRD, FRS, SRS & RTM Documentation</li>
+                        <li>REST API Integrations & Gateways</li>
+                        <li>Agile / Scrum (CSM) & Waterfall</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+
+            <div class="timeline-item">
+                <div class="job-title">Project Manager — Cloud & Application Infrastructure</div>
+                <div class="job-meta">ICICI Bank | Hyderabad, India | March 2025 – Present</div>
+                <ul class="job-bullets">
+                    <li><strong>End-to-End Application Ownership:</strong> Lead application lifecycle management for the mission-critical FASTag Issuance platform, managing development teams, infrastructure provisioning, release management, upgrades, and 24/7 production support.</li>
+                    <li><strong>Azure Cloud IaaS Lift & Shift Migration:</strong> Architected and executed the Lift & Shift migration to Microsoft Azure Cloud IaaS, configuring IIS Web Servers, Azure Blob Storage, Azure Storage Accounts, and File Server Clusters with zero business disruption.</li>
+                    <li><strong>Azure Cost Management & Optimization:</strong> Formulated cloud cost management strategies, optimizing Azure VM sizing, storage tiering, and resource allocation to achieve operational cost savings.</li>
+                    <li><strong>IT Governance & Risk Management:</strong> Enforced Information Security Governance (ISG), RBI banking compliance, and internal audit policies; maintained comprehensive Risk Registers and audit-ready documentation.</li>
+                    <li><strong>Incident Escalation & Service Delivery:</strong> Primary escalation point for critical production incidents, driving Root Cause Analysis (RCA), problem management, and preventive fixes using ServiceNow and Jira.</li>
+                    <li><strong>Monitoring & BCP/DR Readiness:</strong> Configured VUsmart monitoring tools for real-time tracking of system health and transaction throughput; spearheaded Business Continuity Planning (BCP) and Disaster Recovery (DR) drills.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="job-title">Technical Business Analyst & Project Lead</div>
+                <div class="job-meta">Centre for Good Governance (CGG) | Hyderabad, India | Feb 2022 – March 2025</div>
+                <ul class="job-bullets">
+                    <li><strong>e-Governance Project Delivery:</strong> Managed functional delivery and project roadmaps for high-impact State & Central Government platforms (CROP, PQMS, Sand Taxi, Board of Intermediate, e-Kalyan).</li>
+                    <li><strong>Requirements & SDLC Documentation:</strong> Authored detailed BRDs, FRSs, SRSs, process maps, wireframes, and Requirement Traceability Matrices (RTM).</li>
+                    <li><strong>API Integration Management:</strong> Oversaw complex API integrations with central platforms including DGFT (IE Code), ICEGATE (Bill of Entry), Bharatkosh (Payment Gateway), and ePhyto.</li>
+                    <li><strong>Business Intelligence & Analytics:</strong> Generated executive Power BI dashboards, SSMS database scripts, and SSRS reports for government decision-makers.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="job-title">System Analyst & Merchant Integration Team Lead</div>
+                <div class="job-meta">C-Edge Technologies Limited (TCS-SBI Enterprise) | Mumbai, India | Oct 2020 – Jan 2022</div>
+                <ul class="job-bullets">
+                    <li><strong>SBIepay Payment Gateway Management:</strong> Led technical merchant onboarding, API integration, and production support for State Bank of India's payment gateway aggregator platform.</li>
+                    <li><strong>Application Support Delivery:</strong> Managed L1/L2/L3 support operations, analyzing transaction failure logs, response codes, and database queries via SSMS and Linux logs.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="job-title">Technical Support Engineer & IT Infrastructure Specialist</div>
+                <div class="job-meta">Beta Technologies Middle East | Dubai, UAE | Dec 2017 – Jun 2020</div>
+                <ul class="job-bullets">
+                    <li><strong>Enterprise Infrastructure Support:</strong> Delivered L1/L2 IT infrastructure and application support for major corporate clients in Dubai including EFG Bank, IP Global, DIFC, and Emirates Data Center.</li>
+                    <li><strong>Windows Server & Network Administration:</strong> Managed Windows Server 2012/2016, Active Directory (AD DS), Group Policies, DNS, DHCP, NAS/SAN storage, and file servers.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="job-title">System Administrator</div>
+                <div class="job-meta">Saras India Systems Pvt. Ltd. | Hyderabad, India | Dec 2014 – Oct 2016</div>
+                <ul class="job-bullets">
+                    <li>Administered Windows Server 2012 R2, Active Directory, VMware ESXi virtual machines, Cisco IP telephony, and Office 365 Exchange Online.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Education & Certifications</h2>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <h3>M.Tech in Computer Science & Engineering</h3>
+                    <p>JNTU Hyderabad (Aurobindo Institute) | 2014 – 2017</p>
+                </div>
+                <div class="edu-card">
+                    <h3>Master of Computer Applications (MCA)</h3>
+                    <p>Osmania University (Adarsh PG College) | 2009 – 2012</p>
+                </div>
+                <div class="edu-card">
+                    <h3>B.Sc. in Computer Science</h3>
+                    <p>Osmania University (Wanaparthy Degree College) | 2005 – 2008</p>
+                </div>
+                <div class="edu-card">
+                    <h3>Certified Scrum Master (CSM)</h3>
+                    <p>Scrum Alliance</p>
+                </div>
+                <div class="edu-card">
+                    <h3>Microsoft Certified Solutions Associate (MCSA)</h3>
+                    <p>Windows Server 2012 R2</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Rajeshwar Reddy Kothakapu. All rights reserved. | <a href="https://rajuae.github.io/rajeshwar-profile/" style="color: #64748b;">rajuae.github.io/rajeshwar-profile</a></p>
+    </footer>
+
+</body>
+</html>
